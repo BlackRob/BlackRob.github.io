@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" name="viewport" content="initial-scale=1">
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   <meta name="author" content="Robert Austin">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link href='https://fonts.googleapis.com/css?family=Lora|Istok+Web' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="{{site.url}}/css/main.css">
 </head>
-
 <body>
-  {% include header.html %}
-  <div id="content">
-  {{ content }}
+	<div class="container" id="mainContainer">
+	  <!-- header, content and footer are all wrapped in a bootstrap layout -->
+	  <div class="row" id="headerRow">
+    	{% include header.html %}
+    </div>
+    <div class="row" id="contentRow">
+      <div id="content">
+        {{ content }}
+			</div>
+		</div>
+    <div class="row" id="footerRow">
+    	{% include footer.html %}
+    </div>
   </div>
-  {% include footer.html %}
 </body>
+</html>

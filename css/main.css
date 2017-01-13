@@ -1,133 +1,97 @@
 /** 
- * Don't forget normalize.css is called before this
+ * Don't forget the default bootstrap.css is called before this
  */
 
-html{
+/**
+ * CSS for _layouts/default.html
+ */
+body{
 	color: #000;
 	background: #4D6D8A;
-	/*background-image: url("../assets/wptile.png");*/
-	background-repeat: repeat;
+}
+#mainContainer {
+  background: white;
+  box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+  padding-right: 0px;
+  padding-left: 0px;
+}
+#mainContainer .row {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-@viewport{
-	zoom: 1.0;
-	width: extend-to-zoom;
+/**
+ * CSS for _includes/header.html
+ */
+#headerRow {
+	width: 100%;
+  padding: 0px;
+  text-align: left;
+  background: white;
+}
+#headerRow .navbar {
+	padding-top: 8px;
+	padding-bottom: 8px;
+  border-radius: 0px;
+  border: 0px;
+}
+#headerRow .navbar-brand {
+	font-size: 24px;
+	margin-left: 0px;
 }
 
-@-ms-viewport{
-	width: extend-to-zoom;
-	zoom: 1.0;
+/**
+ * CSS for main content in _layouts/default.html
+ */
+#contentRow {
+  padding: 30px 60px 30px 60px;
+  text-align: left;
+  background: white;
+}
+#embeddedVideo1 {
+	margin-bottom: 18px;
 }
 
-body{	
-	max-width: 78em;
-	margin: 0px auto 0px auto;
-	color: #000;
-	background: #FFF;
-	font-family: 'Lora', serif;
-	font-size: 62.5%;
-	line-height: 1.5;
-	box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-	-webkit-box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
-	-moz-box-shadow: 0 1px 20px rgba(0,0,0,0.8);
-	-o-box-shadow: 0 1px 20px rgba(0,0,0,0.8);
+/**
+ * CSS for _includes/header.html #9a94bc 
+ */
+#footerRow {
+  padding: 30px 60px 30px 60px;
+  text-align: center;
+  background: black;
+  color: white;
+  border: 10px;
+  border-color: black;
+  border-top-color: black;
+  margin-top: 30px;
 }
 
-header {
-	padding: 4em;
-	text-align: center;
-	background: #739D37;
-	color: #FFEED7;
-}
-
-nav {
-	display: inline;
-}
-
-footer {
-	padding: 30px 60px 30px 60px;
-	text-align: center;
-	background: #555;
-}
-
-/** 
- * Text stuff
+/**
+ * general style rules
  */
 
-a, a:visited, a:hover {
-	text-decoration: none;
-	color: #FFEED7;
+a:link {
+    text-decoration: none;
 }
 
-p, ol, ul, li {
-	font-size: 1em;
+a:visited {
+    text-decoration: none;
 }
 
-h1 {
-	font-family: 'Istok Web', sans-serif;
-	font-size: 2.4em;
+a:hover {
+    text-decoration: none;
 }
 
-h2 {
-	font-family: 'Istok Web', sans-serif;
-	font-size: 1.8em;
+a:active {
+    text-decoration: underline;
 }
 
-h3 {
-	font-family: 'Istok Web', sans-serif;
-	font-size: 1.2em;
+.h1, .h2, .h3, h1, h2, h3 {
+    margin-top: 8px;
+    margin-bottom: 16px;
 }
 
-#content {
-	padding: 1em 6em 1em 6em;
-}
-
-#content h1,h2,h3 {
-	text-align: left;
-}
-
-
-#reset {
-	width: 80px;
-}
-
-.attribution {
-	text-align: right;
-	background: white;
-}
-
-div .button {
+.hasCaption {
 	text-align: center;
-	margin: 4px;
-	padding: 0.4em 0.5em 0.5em 0.5em;
-	width: 8em;
-	height: 1em;
-	border: 1px solid #4B7311;
-	display: inline-block;
-	font-size: 1.3em;
-	
-}
-
-div .button:hover {
-	background: #9678A9;
-	#color: #E3F3CC;
-}
-
-div .button>a:hover {
-	color: #E3F3CC;
-}
-
-/* unvisited link */
-div .button a:link {
-    color: #FFEED7;
-}
-
-/* visited link */
-div .button a:visited {
-    color: #C2AFCE;
-}
-
-/* this div contains the title and disappears off the top of the page when scrolled */
-#disappearing {
-	height: 5em;
+	font-style: italic;
 }
