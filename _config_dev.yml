@@ -19,7 +19,8 @@ description: > # this means to ignore newlines until "baseurl:"
  The personal website of Robert Austin. I'm a writer and a maker. 
  These pages are an online portfolio of the things I've built. 
 baseurl: /jekyll # the subpath of your site, e.g. /blog
-url: "http://localhost:4000" # the base hostname & protocol for your site
+host: 0.0.0.0
+port: 4000
 twitter_username: Black_Robert
 github_username:  BlackRob
 instagram: black_robert

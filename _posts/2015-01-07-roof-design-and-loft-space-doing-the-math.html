@@ -2,37 +2,26 @@
 layout: post
 title: 'Roof design and loft space: doing the math'
 date: 2015-01-07 12:29:42.000000000 -05:00
-type: post
-published: true
-status: publish
-categories:
-- Design
-tags: []
-meta:
-  _edit_last: '1'
-  _oembed_b343495f5aaafea2fd8a206f594ecbed: "{{unknown}}"
-  _wpas_done_all: '1'
-author:
-  login: imanartist
-  email: hero@workingclasshouses.com
-  display_name: imanartist
-  first_name: ''
-  last_name: ''
 ---
+
+<script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+<h1>{{page.title}}</h1>
 <p>From almost the beginning of my tiny house design, I'd wanted a roof with an off-center ridge (AKA "saltbox", but I didn't learn the term until recently).  My thinking was that I would get the same amount of usable head space as having the ridge in the center, but would have it in a more desirable location, i.e. near where your head would be when sleeping. But the other day I decided to actually check and see if this assumption was true, and I was, frankly, a little surprised*: for a peaked roof, the most space** is obtained when the peak is in the middle, and the least when a shed roof is used.</p>
-<p><a href="http://workingclasshouses.com/wp-content/uploads/2014/04/loft_space_crossections.jpg"><img class="alignnone size-full wp-image-124" src="{{ site.baseurl }}/assets/loft_space_crossections.jpg" alt="loft_space_crossections" width="1293" height="2570" /></a></p>
+<p class="hasCaption"><a href="{{ site.baseurl }}/assets/loft_space_crossections.jpg"><img class="img-responsive" src="{{ site.baseurl }}/assets/loft_space_crossections.jpg" alt="loft_space_crossections" /></a>loft space crosssections</p>
 <p>Okay, so you're probably thinking, "what the hell dude, that doesn't help". Actually it does.  The slope of your roof is θ.  Obviously, you get your maximum space (cross section area) when θ = 0 (flat roof).  A flat roof isn't ideal for most climates (it doesn't naturally shed water), so most people choose to have some slope to their roof. Traditional roof slopes are given in the form of a ratio, say 4:12 (4 in 12).  That means that the roof rises 4 feet for every 12 feet horizontal. Recall from trig that the tangent of an angle is the ratio of rise over run, so 4:12 is equivalent to an angle of 18.4°.  Here is an image from the <a href="http://en.wikipedia.org/wiki/Roof_pitch">wikipedia page on roof pitch</a> to help visualize this</p>
-<p>[caption id="" align="alignnone" width="1395"]<img class="" src="{{ site.baseurl }}/assets/Example_of_Roof_Pitches.jpg" alt="" width="1395" height="684" /> Example of roof pitches[/caption]</p>
+<p class="hasCaption"><img class="img-responsive" src="{{ site.baseurl }}/assets/Example_of_Roof_Pitches.jpg" alt="Example of roof pitches" /> Example of roof pitches</p>
 <p>The first thing you want to do if you are trying to maximize the loft space in your design is decide on what the minimum roof slope that works for your climate and aesthetics.  For my tiny house, I chose approximately 8:12*** for the main roof and 4:12 for the shed dormer.  Personally, I like the look of a steeper roof, and I was willing to go with less overall space to get the look I wanted. For my region (Michigan) 3:12 is a good minimum because of snow loads (but because tiny houses aren't very wide you can get away with a much shallower roof.)</p>
 <p>Looking at the equation for area, how do we use this to maximize our loft space? Calculus, of course! Since we've chosen the slope of our roof based on other criteria, and the width and height are constrained, the only variable is P, so loft space (volume really, but we're only looking at the cross section) is a function of P, the distance of the roof ridge from the wall.</p>
-<p style="text-align: center;"> [latex]A=f(P)=HW - \frac{tan\theta}{2}(W^2 -2WP +2P^2) [/latex]</p>
+<p style="text-align: center;"> \[A=f(P)=HW - \frac{tan\theta}{2}(W^2 -2WP +2P^2) \]</p>
 <p style="text-align: left;">If we graph this (approximately, using some reasonable values), we see that the area has a maximum value for some value of P.</p>
-<p>[caption id="attachment_242" align="alignnone" width="650"]<a href="http://workingclasshouses.com/wp-content/uploads/2015/01/save.png"><img class="size-full wp-image-242" src="{{ site.baseurl }}/assets/save.png" alt="Crossectional area of the loft is vertical, distance P from the wall is the horizontal; H is 3, W is 8, pitch is 4:12" width="650" height="400" /></a> Cross sectional area of the loft is vertical, distance P from the wall is the horizontal; H is 3, W is 8, pitch is 4:12[/caption]</p>
-<p>We can find that point by taking the derivative of [latex]f(P)[/latex] and setting it equal to 0.</p>
-<p style="text-align: center;"> [latex]f(P)=HW - \frac{tan\theta}{2}(W^2 -2WP +2P^2) [/latex]</p>
-<p style="text-align: center;">[latex]f'(P)=- \frac{tan\theta}{2}( -2W +4P) =0[/latex]</p>
-<p style="text-align: center;">[latex]2W-4P=0[/latex]</p>
-<p style="text-align: center;">[latex]P=\frac{1}{2} W[/latex]</p>
+<p class="hasCaption"><a href="{{ site.baseurl }}/assets/save.png"><img class="img-responsive" src="{{ site.baseurl }}/assets/save.png" alt="Crossectional area of the loft is vertical, distance P from the wall is the horizontal; H is 3, W is 8, pitch is 4:12"/></a> Cross sectional area of the loft is vertical, distance P from the wall is the horizontal; H is 3, W is 8, pitch is 4:12</p>
+<p>We can find that point by taking the derivative of \(f(P)\) and setting it equal to 0.</p>
+<p style="text-align: center;"> \[f(P)=HW - \frac{tan\theta}{2}(W^2 -2WP +2P^2) \]</p>
+<p style="text-align: center;"> \[f'(P)=- \frac{tan\theta}{2}( -2W +4P) =0 \]</p>
+<p style="text-align: center;"> \[2W-4P=0 \]</p>
+<p style="text-align: center;"> \[P=\frac{1}{2} W \]</p>
 <p>An example makes it easier to understand.  Let's assume that our loft is 8' wide, and the peak of the roof is 4' above the loft. Let's also assume we chose a 4:12 pitch (18.4°). With a gable roof, the roof height at the walls will be 16" below the peak, or 2' 8.  That's at each wall.  If instead we use a shed roof, the roof peak (4') will be at one wall, the height in the center will be 2' 8, and the height at the other wall will be a meager 1' 4.</p>
 <p>So, after doing the math --which is what engineers do-- it is clear that we can maximize loft space by first choosing a low slope roof, then using a gabled (ridge in the middle) roof. This is not intended as a definitive "hell no" to shed roofs. They have some advantages: they're easy to frame and they look modern. But if head height in the loft is a concern, skip the shed</p>
 <p>* I shouldn't have been surprised, but I hadn't given it any thought, and I don't have good math intuition. A lot of people don't.</p>
