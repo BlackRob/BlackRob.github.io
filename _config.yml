@@ -22,7 +22,9 @@ baseurl: # the subpath of your site, e.g. /blog
 url: "http://workingclasshouses.com" # the base hostname & protocol for your site
 twitter_username: Black_Robert
 github_username:  BlackRob
-instagram: black_robert
+linkedin_username: robert-austin-01399261
+medium_username: "@robert.w.austin"
+instagram_username: black_robert
 timezone: America/Detroit
 
 
