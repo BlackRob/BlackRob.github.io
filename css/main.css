@@ -87,11 +87,20 @@ a:active {
 }
 
 .h1, .h2, .h3, h1, h2, h3 {
-    margin-top: 8px;
-    margin-bottom: 16px;
+    margin-top: 20px;
+    margin-bottom: 8px;
 }
 
 .hasCaption {
 	text-align: center;
 	font-style: italic;
+}
+
+.width75 {
+  width: 75%;
+  height: auto;
+}
+.width25 {
+  width: 25%;
+  height: auto;
 }
