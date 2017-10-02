@@ -98,6 +98,7 @@ function customize() {
     needsRestart = true;
   }
   $("#customizeModal").modal('hide');
+  $('.navbar-collapse').collapse('hide');
   if(needsRestart) startOver();
 }
 function check3() {
